@@ -1,0 +1,92 @@
+#chat-window {
+  height: 500px;
+  overflow-y: auto;
+  border: 2px solid black;
+  padding: 10px;
+}
+
+.master {
+  border: 2px solid black;
+}
+
+.message {
+  display: flex;
+  /* flex-wrap: wrap; */
+
+  margin-bottom: 10px;
+}
+
+.sender-1 {
+  background-color: #e6f2ff;
+  margin-left: auto;
+  margin-right: 1rem;
+  overflow-wrap: break-word; 
+  max-width: 50%; 
+  padding: 0.25rem;
+  border-radius: 0.55rem 0.55rem 0 0.55rem; 
+  color: #000; 
+  margin-top: 1rem; 
+  margin-bottom: 1rem;
+
+}
+
+.sender-2 {
+  background-color: #ccffcc;
+}
+
+.message-bubble {
+  padding: 10px;
+  border-radius: 10px;
+  display: inline-block;
+}
+
+#message-input {
+  margin-top: 20px;
+}
+
+#message-text {
+  width: 70%;
+  padding: 10px;
+}
+
+.msg-text {
+  border-color: none;
+}
+.msg-text:focus {
+  outline: none !important;
+  box-shadow: none !important;
+  border-color: none;
+}
+
+.card {
+  background-color: #F0F0F0;
+  transition: background-color 0.3s ease;
+}
+
+.card:hover {
+  cursor: pointer;
+  background-color: #FFFADD;
+}
+
+/* .vertical-line {
+  width: 1px;
+  background-color: #ccc;
+  height: 100vh; 
+  float: left;
+} */
+
+#chat-messages::-webkit-scrollbar { width: 0 !important }
+#users::-webkit-scrollbar { width: 0 !important }
+/* .vertical-line::-webkit-scrollbar { width: 0 !important } */
+
+.fs-10 {
+  font-size: 10px;
+}
+
+.fs-12 {
+  font-size: 12px;
+}
+
+.user-header {
+  height: 20px;
+}
