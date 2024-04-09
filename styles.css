@@ -1,13 +1,24 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+
+
 * {
   box-sizing: border-box;
   font-family: 'Roboto', sans-serif;
+}
+
+body {
 }
 
 /* Styling the main container */
 .container {
   margin: auto;
   letter-spacing: 0.5px;
+}
+
+.users {
+  position: relative;
+  background-color:#0C2E84;
 }
 
 img {
@@ -40,11 +51,29 @@ img {
   margin: 0;
 }
 
+/* search input*/
+.search-container {
+  height: 60px;
+  position: sticky;
+  top: 0;
+  z-index: 99;
+}
+
+.search-input {
+  background-color: #5F80C0;
+  color: whitesmoke;
+  font-size: 15px;
+}
+
+.search-input::placeholder {
+  color: white;
+  padding: 8px;
+}
+
 /* styling user-name */
 .active {
-  width: 150px;
   float: left;
-  color: black;
+  color: #194AA5;
   font-weight: bold;
   margin: 0 0 0 5px;
   height: 10%;
@@ -53,8 +82,18 @@ img {
 
 .last-seen {
   font-size: 12px;
-  width: 100px;
+  color: #ffffff;
 }
+
+.last-seen-active {
+  font-size: 12px;
+  color: #495057;
+}
+
+.dlt-btn {
+  color: #194AA5;
+}
+
 /* Styling the inbox */
 .chat-page {
   padding: 0;
@@ -73,7 +112,7 @@ img {
 }
 
 .msg-page {
-  max-height: 402px;
+  max-height: 464.5px;
   overflow-y: auto;
 }
 
@@ -168,7 +207,8 @@ received-chats-img {
 }
 
 .received-msg-inbox p {
-  background: #efefef none repeat scroll 0 0;
+  /* background: #efefef none repeat scroll 0 0; */
+  background-color: #EFEFEF;
   border-radius: 10px;
   color: #646464;
   font-size: 12px;
@@ -195,8 +235,9 @@ p {
 }
 
 .outgoing-chats-msg p {
-  background-color: #3a12ff;
-  background-image: linear-gradient(45deg, #ee087f 0%, #DD2A7B 25%, #9858ac 50%, #8134AF 75%, #515BD4 100%);
+  /* background-color: #3a12ff; */
+  /* background-image: linear-gradient(45deg, #ee087f 0%, #DD2A7B 25%, #9858ac 50%, #8134AF 75%, #515BD4 100%); */
+  background-color: #194AA5;
   color: #fff;
   border-radius: 10px;
   font-size: 12px;
@@ -264,14 +305,13 @@ p {
 }
 
 #chat-window {
-  height: 500px;
+  height: 600px;
   overflow-y: auto;
-  border: 2px solid black;
   padding: 10px;
 }
 
 .master {
-  border: 2px solid black;
+  box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.562);
 }
 
 .message {
@@ -324,13 +364,15 @@ p {
 }
 
 .card {
-  background-color: #F0F0F0;
+  /* background-color: #F0F0F0; */
+  background-color: #194AA5;
   transition: background-color 0.3s ease;
+  color: white;
 }
 
 .card:hover {
   cursor: pointer;
-  background-color: #FFFADD;
+  background-color: #0C2E84;
 }
 
 #chat-messages::-webkit-scrollbar { width: 0 !important }
