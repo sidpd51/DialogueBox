@@ -112,7 +112,7 @@ img {
 }
 
 .msg-page {
-  max-height: 464.5px;
+  max-height: 469.5px;
   overflow-y: auto;
 }
 
@@ -211,7 +211,7 @@ received-chats-img {
   background-color: #EFEFEF;
   border-radius: 10px;
   color: #646464;
-  font-size: 12px;
+  font-size: 14px;
   margin-left: 1rem;
   padding: 1rem;
   width: 100%;
@@ -226,7 +226,7 @@ p {
 .time {
   color: #777;
   display: block;
-  font-size: 12px;
+  font-size: 10px;
   margin: 8px 0 0;
 }
 .outgoing-chats {
@@ -240,7 +240,7 @@ p {
   background-color: #194AA5;
   color: #fff;
   border-radius: 10px;
-  font-size: 12px;
+  font-size: 14px;
   color: #fff;
   padding: 5px 10px 5px 12px;
   width: 100%;
