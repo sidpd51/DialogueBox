@@ -15,5 +15,5 @@
 
 const submitForm = () => {
     console.log("Sign In successfully")
-    window.location.href = 'home-page.html';
+    window.location.href = '../index.html';
 }
