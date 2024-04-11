@@ -1,3 +1,7 @@
+ .container {
+  margin-top: 100px!important;
+ }
+
 a {
     text-decoration: none;
 }
@@ -8,4 +12,18 @@ a {
   margin-top: -25px;
   position: relative;
   z-index: 2;
+}
+
+.btn {
+  background-color: #194AA5;
+  color: white;
+}
+
+.btn:hover {
+  background-color: #0C2E84;
+  color: white;
+}
+
+input {
+  background-color: #e3e8f1!important;
 }

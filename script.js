@@ -14,8 +14,8 @@ document.addEventListener('DOMContentLoaded', function () {
   sendButton.addEventListener('click', function () {
     const message = messageText.value.trim();
     if (message !== '') {
-      sendMessage(message); // You can change the sender class accordingly
-      // receivedMessage(message)
+      // sendMessage(message); // You can change the sender class accordingly
+      receivedMessage(message)
       messageText.value = '';
       msgPage.scrollTop = msgPage.scrollHeight;
     }
